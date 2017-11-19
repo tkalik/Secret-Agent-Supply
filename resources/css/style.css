@@ -67,6 +67,7 @@ html {
   flex-direction: row;
 }
 
+.navigation,
 .menu {
   display: inline-flex;
   justify-content: space-between;
@@ -75,33 +76,44 @@ html {
   padding: 0.75rem 0 0.75rem 0;
 }
 
+.menu {
+  display:none;
+}
+
+
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.box {
+.product {
   display: flex;
   width: 930px;
   justify-content: space-between;
   margin: 3rem 0;
 }
 
-.product {
+.pencil,
+.watch,
+.glasses {
   display: flex;
   flex-direction: column;
   border: 4px solid black;
   width: 30%;
 }
 
-.product img {
+.pencil img,
+.watch img,
+.glasses img {
   display: flex;
   height: 9rem;
   margin: 2rem;
 }
 
-.product p {
+.pencil p,
+.watch p,
+.glasses p {
   text-align: center;
   color: white;
   background-color: black;
@@ -139,4 +151,95 @@ footer {
 
 footer p {
   width: 930px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .pencil,
+  .watch,
+  .glasses {
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .navigation{
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+
+  .main {
+    height: 15rem;
+  }
+
+  .arrival {
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .product {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .arrival h3 {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+
+  .arrival h1 {
+    font-size: 1rem;
+  }
+
+  .arrival h3,
+  .arrival h1 {
+    padding-left: 2rem;
+  }
+
+
+  .pencil {
+    width: 90%;
+  }
+
+
+  .watch,
+  .glasses {
+    display: none;
+  }
+
+  .about {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .location ,
+  .hours {
+    width: 100%;
+  }
+
+  .location {
+    margin-bottom: 0rem;
+  }
+  .hours {
+    margin-top: 0.5rem;
+  }
+
+  }
+
+  footer {
+    text-align: center;
+  }
 }
