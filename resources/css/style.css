@@ -1,0 +1,142 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.black {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  width: 930px;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.logo h3 {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.66rem 0;
+}
+
+.main {
+  display:flex;
+  justify-content: center;
+  background-image: url("./images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+.heading {
+  width: 930px;
+}
+
+.arrival {
+  background-color: black;
+  width: 25rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 9rem;
+}
+
+.arrival h3 {
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.arrival h1 {
+  font-size: 2rem;
+  padding: 0.25rem 0 2rem 3rem;
+}
+
+.red {
+  display: flex;
+  justify-content: center;
+  background-color: firebrick;
+  flex-direction: row;
+}
+
+.menu {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 930px;
+  color: white;
+  padding: 0.75rem 0 0.75rem 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  width: 930px;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  width: 30%;
+}
+
+.product img {
+  display: flex;
+  height: 9rem;
+  margin: 2rem;
+}
+
+.product p {
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  width: 930px;
+}
+
+.location,
+.hours {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+
+.location p,
+.hours p {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 5rem;
+}
+
+footer p {
+  width: 930px;
+}
